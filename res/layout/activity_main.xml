@@ -8,9 +8,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/messageExternal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignRight="@+id/messageinternal"
+        android:layout_below="@+id/messageinternal"
+        android:layout_marginTop="24dp"
+        android:text="External" 
+        android:onClick="messageExternal"/>
+
+    <Button
+        android:id="@+id/messageinternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Internal" />
+
+    <Button
+        android:id="@+id/aboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/messageExternal"
+        android:layout_marginTop="32dp"
+        android:text="About Me" 
+        android:onClick="aboutMe"/>
 
 </RelativeLayout>
